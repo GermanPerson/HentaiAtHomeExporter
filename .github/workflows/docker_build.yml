@@ -8,7 +8,7 @@ on:
 
 env:
   IMAGE_NAME: hentaiathomeexporter
-  USERNAME: germandeveloper
+  USERNAME: germanperson
 
 jobs:
 
