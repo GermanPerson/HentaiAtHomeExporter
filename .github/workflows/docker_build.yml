@@ -47,5 +47,5 @@ jobs:
           context: .
           push: true
           platforms: ${{ steps.buildx.outputs.platforms }}
-          tags: ${{ github.actor }}/${{ env.IMAGE_NAME }}:latest,${{ github.actor }}/${{ env.IMAGE_NAME }}:${{ env.GITHUB_SHA }}
+          tags: ${{ github.actor }}/${{ env.IMAGE_NAME }}:latest,${{ github.actor }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
           labels: ${{ steps.meta.outputs.labels }}
