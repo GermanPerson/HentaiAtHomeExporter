@@ -8,6 +8,7 @@ on:
 
 env:
   IMAGE_NAME: hentaiathome-exporter
+  USERNAME: germandeveloper
 
 jobs:
 
@@ -47,5 +48,5 @@ jobs:
           context: .
           push: true
           platforms: ${{ steps.buildx.outputs.platforms }}
-          tags: ${{ github.actor }}/${{ env.IMAGE_NAME }}:latest,${{ github.actor }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+          tags: ${{ env.USERNAME }}/${{ env.IMAGE_NAME }}:latest,${{ env.USERNAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
           labels: ${{ steps.meta.outputs.labels }}
