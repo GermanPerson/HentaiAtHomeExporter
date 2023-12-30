@@ -25,7 +25,8 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.REGISTRY }}/GermanDeveloper/HentaiAtHomeExporter
+          images: ${{ env.REGISTRY }}/germandeveloper/hentaiathomeexporter
+          tags: ${{ github.sha }}, ${{ github.ref }}
       - name: Log in to GHCR
         uses: docker/login-action@v3
         with:
