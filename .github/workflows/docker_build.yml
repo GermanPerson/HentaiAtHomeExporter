@@ -48,5 +48,5 @@ jobs:
           context: .
           push: true
           platforms: ${{ steps.buildx.outputs.platforms }}
-          tags: ${{ env.USERNAME }}/${{ env.IMAGE_NAME }}:latest,${{ env.USERNAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+          tags: ghcr.io/${{ env.USERNAME }}/${{ env.IMAGE_NAME }}:latest,ghcr.io/${{ env.USERNAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
           labels: ${{ steps.meta.outputs.labels }}
