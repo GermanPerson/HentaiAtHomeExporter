@@ -41,4 +41,4 @@ jobs:
           push: true
           platforms: ${{ steps.buildx.outputs.platforms }}
           provenance: false
-          tags:  ${{ env.REGISTRY }}/GermanDeveloper/HentaiAtHomeExporter:develop
+          tags:  ${{ env.REGISTRY }}/germandeveloper/hentaiathomeexporter:develop

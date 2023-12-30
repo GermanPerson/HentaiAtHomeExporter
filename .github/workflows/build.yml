@@ -23,3 +23,10 @@ jobs:
           with:
             name: HentaiAtHomeExporter
             path: HentaiAtHomeExporter
+        - name: Release
+          uses: softprops/action-gh-release@v1
+          with:
+            files: HentaiAtHomeExporter
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
