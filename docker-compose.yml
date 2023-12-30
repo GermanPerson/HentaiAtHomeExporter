@@ -1,0 +1,10 @@
+services:
+  exporter:
+    image: ghcr.io/germanperson/hentaiathomeexporter:latest
+    container_name: hah_exporter
+    restart: unless-stopped
+    ports:
+      - 2112:2112
+    environment:
+      - EH_USERNAME=your_username
+      - EH_PASSWORD=your_password
